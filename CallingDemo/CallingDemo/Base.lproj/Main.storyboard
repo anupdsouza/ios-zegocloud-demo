@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CallingDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZEGOCLOUD DEMO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mO-kg-jIi">
+                                <rect key="frame" x="94.666666666666686" y="94" width="204" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="H7G-Zz-FyI"/>
+                                    <constraint firstAttribute="height" constant="23" id="y1n-9S-1dH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vdX-h8-jNq">
+                                <rect key="frame" x="48" y="161" width="297" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="291-Ya-ZR7"/>
+                                    <constraint firstAttribute="width" constant="297" id="JUj-h0-f1x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2o-37-g1K">
+                                <rect key="frame" x="139" y="240" width="115" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="cFJ-K6-F16"/>
+                                    <constraint firstAttribute="height" constant="35" id="vxu-9M-zYZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Join Call"/>
+                                <connections>
+                                    <action selector="makeNewCall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oTu-xz-rVT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F2o-37-g1K" firstAttribute="top" secondItem="vdX-h8-jNq" secondAttribute="bottom" constant="45" id="AZ5-CN-gxp"/>
+                            <constraint firstItem="vdX-h8-jNq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fsa-WH-VuT"/>
+                            <constraint firstItem="vdX-h8-jNq" firstAttribute="top" secondItem="0mO-kg-jIi" secondAttribute="bottom" constant="44" id="jif-yw-rNW"/>
+                            <constraint firstItem="0mO-kg-jIi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jqm-No-2Eo"/>
+                            <constraint firstItem="0mO-kg-jIi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="oPW-b6-KR5"/>
+                            <constraint firstItem="F2o-37-g1K" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zZf-5N-02S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="usernameField" destination="vdX-h8-jNq" id="HzO-au-gXb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.95419847328243" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
